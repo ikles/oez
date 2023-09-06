@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. ОЭЗ</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="banner__row">
+          <div class="banner__l">
+            <img src="img/prlogo.svg" class="banner__logo" />
+            <p class="banner__title">
+              Онлайн витрина <br />
+              российских производителей
+            </p>
+          </div>
+          <div class="banner__r">
+            <ul>
+              <li>Заказы на поставку</li>
+              <li>Бесплатная регистрация</li>
+              <li>Удобный каталог поставщиков</li>
+            </ul>
+          </div>
+        </div>
+        <ul class="bread">
+          <li><a href="">Главная</a></li>
+          <li>Особые экономические зоны</li>
+        </ul>
+        <div class="economic">
+          <div class="h1">Особые экономические зоны</div>
+          <div class="actions__row">
+            <ul>
+              <li><a href="">Технико-внедренческие</a></li>
+              <li><a href="">Промышленно-производственные</a></li>
+              <li><a href="">Туристско-рекреационные</a></li>
+              <li><a href="">Портовые</a></li>
+            </ul>
+            <div class="w247">
+              <select>
+                <option value="Выбрать регион">Выбрать регион</option>
+                <option value="Москва">Москва</option>
+              </select>
+            </div>
+          </div>
+          <div class="economic__row">
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Технико-внедренческие ОЭЗ",
+                "title":"Иннополис",
+                "loc":"Республика Татарстан",
+                "list":"<ul><li><a href=''>Информационные технологии</a></li></ul>",
+                "img":"img/economic-1.jpg",
+                "res":"Количество резидентов: <span>122</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленно-производственные ОЭЗ",
+                "img":"img/economic-2.jpg",
+                "title":"Алабуга",
+                "loc":"Республика Татарстан",
+                "list":"<ul><li><a href=''>Автомобилестроение</a></li><li><a href=''>Автокомпоненты</a></li><li><a href=''>Приборостроение</a></li><li><a href=''>Нефтехимия</a></li><li><a href=''>Композитные и строительные материалы</a></li><li><a href=''>Cтроительные материалы</a></li><li><a href=''>Товары массового потребления</a></li></ul>",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+
+
+            @@loop('var/_loop.html', [
+            { "text": "Автомобилестроение" },    
+            { "text": "Автомобилестроение2" }  
+            ])
+
+
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-3.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-4.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-5.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-6.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-7.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-8.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+            <div class="economic__col">
+              @@include('var/_economic__it.html',{
+                "cat":"Промышленнопроизводственные",
+                "img":"img/economic-0.jpg",
+                "title":"Алабуга",
+                "loc":"Республика",
+                "list":"",
+                "res":"Количество резидентов: <span>69</span>"
+              })
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>

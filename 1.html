@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="special">
+          <div class="special__title">Особые экономические зоны</div>
+          <p>Реестр площадок и резидентов, пресс-центр и справочная информация</p>
+          <div class="special__items">
+            <div class="special__item">
+              <div>50</div>
+              <p>Особых<br> экономических зон</p>
+            </div>
+            <div class="special__item">
+              <div>1019</div>
+              <p>
+                Компании-<br />
+                резидента
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <img src="img/map.jpg" />
+        </div>
+        <div class="news">
+          <div class="h2">Новости</div>
+          <div class="news__row">
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"Алабуга и РЖД подписали соглашение о развитии инфраструктуры",
+                "cat":"#новости ОЭЗ",
+                "img":"img/news-1.jpg",
+                "date":"29 мая 2023"
+              })
+            </div>
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"Продажи сенсорных дисплеев резидента ОЭЗ «Технополис Москва» выросли на 90 процентов",
+                "cat":"##новости резидентов",
+                "img":"img/news-2.jpg",
+                "date":"17 апреля 2023 "
+              })
+            </div>
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"Резиденты КИП «Мастер» стремятся к новым высотам",
+                "cat":"#новости резидентов",
+                "img":"img/news-3.jpg",
+                "date":"17 апреля 2023 "
+              })
+            </div>
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"1,5 млрд рублей вложат в производство лекарственных препаратов в Дубне",
+                "cat":"#новости ОЭЗ",
+                "img":"img/news-4.jpg",
+                "date":"29 мая 2023"
+              })
+            </div>
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"Резидент ОЭЗ «Технополис Москва» откроет два научно-исследовательских центра по разработке медицинских препаратов",
+                "cat":"#новости резидентов",
+                "img":"img/news-6.jpg",
+                "date":"17 апреля 2023 "
+              })
+            </div>
+            <div class="news__col">
+              @@include('var/_news__it.html',{
+                "title":"Новые весенние резиденты в промышленном парке «Софийский»",
+                "cat":"#новости ОЭЗ",
+                "img":"img/news-5.jpg",
+                "date":"17 апреля 2023 "
+              })
+            </div>
+          </div>
+          <a href="" class="btn">Все новости</a>
+        </div>
+      </div>
+    </main>      
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
+
