@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
   <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>  
+  <title>7. Публикации</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Open+Sans&display=swap" rel="stylesheet">
@@ -16,11 +17,12 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
 
   <div class="wrapper">
@@ -42,31 +44,39 @@
 </header>
     <main class="main">
       <div class="contain">
-        <div class="special">
-          <div class="special__title">Особые экономические зоны</div>
-          <p>Реестр площадок и резидентов, пресс-центр и справочная информация</p>
-          <div class="special__items">
-            <div class="special__item">
-              <div>50</div>
-              <p>Особых<br> экономических зон</p>
-            </div>
-            <div class="special__item">
-              <div>1019</div>
-              <p>
-                Компании-<br />
-                резидента
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="map">
-          <img src="img/map.jpg" />
-        </div>
-        <div class="news">
-          <div class="h2">Новости</div>
-          <div class="news__row">
-            <div class="news__col">
-              <div class="news__it">
+        <div class="banner__row">
+  <div class="banner__l">
+    <img src="img/prlogo.svg" class="banner__logo" />
+    <p class="banner__title">
+      Онлайн витрина <br />
+      российских производителей
+    </p>
+  </div>
+  <div class="banner__r">
+    <ul>
+      <li>Заказы на поставку</li>
+      <li>Бесплатная регистрация</li>
+      <li>Удобный каталог поставщиков</li>
+    </ul>
+  </div>
+</div>
+        <ul class="bread">
+          <li><a href=''>Главная</a></li>
+          <li>Публикации</li>
+        </ul> 
+        <div class="pubs-page">
+          <div class="h1">Публикации</div>
+          <ul class="tags__ul">
+            <li><a class="active" href="">Все</a></li>
+            <li><a href="">Новости ОЭЗ</a></li>
+            <li><a href="">Новости резидентов</a></li>
+            <li><a href="">Экономика</a></li>
+            <li><a href="">Законодательство</a></li>
+            <li><a href="">Меры поддержки</a></li>            
+          </ul>
+          <div class="news__list">
+           <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-1.jpg"/>
   </a>
@@ -74,9 +84,9 @@
   <a href="" class="news__title">Алабуга и РЖД подписали соглашение о развитии инфраструктуры</a>
   <p>29 мая 2023</p>
 </div>
-            </div>
-            <div class="news__col">
-              <div class="news__it">
+          </div>
+          <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-2.jpg"/>
   </a>
@@ -84,9 +94,9 @@
   <a href="" class="news__title">Продажи сенсорных дисплеев резидента ОЭЗ «Технополис Москва» выросли на 90 процентов</a>
   <p>17 апреля 2023 </p>
 </div>
-            </div>
-            <div class="news__col">
-              <div class="news__it">
+          </div>
+          <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-3.jpg"/>
   </a>
@@ -94,9 +104,9 @@
   <a href="" class="news__title">Резиденты КИП «Мастер» стремятся к новым высотам</a>
   <p>17 апреля 2023 </p>
 </div>
-            </div>
-            <div class="news__col">
-              <div class="news__it">
+          </div>
+          <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-4.jpg"/>
   </a>
@@ -104,9 +114,9 @@
   <a href="" class="news__title">1,5 млрд рублей вложат в производство лекарственных препаратов в Дубне</a>
   <p>29 мая 2023</p>
 </div>
-            </div>
-            <div class="news__col">
-              <div class="news__it">
+          </div>
+          <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-6.jpg"/>
   </a>
@@ -114,9 +124,9 @@
   <a href="" class="news__title">Резидент ОЭЗ «Технополис Москва» откроет два научно-исследовательских центра по разработке медицинских препаратов</a>
   <p>17 апреля 2023 </p>
 </div>
-            </div>
-            <div class="news__col">
-              <div class="news__it">
+          </div>
+          <div class="news__col">
+            <div class="news__it">
   <a href="" class="news__img-w">
     <img src="img/news-5.jpg"/>
   </a>
@@ -124,13 +134,80 @@
   <a href="" class="news__title">Новые весенние резиденты в промышленном парке «Софийский»</a>
   <p>17 апреля 2023 </p>
 </div>
-            </div>
           </div>
-          <a href="" class="btn">Все новости</a>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-1.jpg"/>
+  </a>
+  <a href="" class="news__cat">#новости ОЭЗ</a>
+  <a href="" class="news__title">Алабуга и РЖД подписали соглашение о развитии инфраструктуры</a>
+  <p>29 мая 2023</p>
+</div>
+          </div>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-2.jpg"/>
+  </a>
+  <a href="" class="news__cat">##новости резидентов</a>
+  <a href="" class="news__title">Продажи сенсорных дисплеев резидента ОЭЗ «Технополис Москва» выросли на 90 процентов</a>
+  <p>17 апреля 2023 </p>
+</div>
+          </div>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-3.jpg"/>
+  </a>
+  <a href="" class="news__cat">#новости резидентов</a>
+  <a href="" class="news__title">Резиденты КИП «Мастер» стремятся к новым высотам</a>
+  <p>17 апреля 2023 </p>
+</div>
+          </div>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-4.jpg"/>
+  </a>
+  <a href="" class="news__cat">#новости ОЭЗ</a>
+  <a href="" class="news__title">1,5 млрд рублей вложат в производство лекарственных препаратов в Дубне</a>
+  <p>29 мая 2023</p>
+</div>
+          </div>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-6.jpg"/>
+  </a>
+  <a href="" class="news__cat">#новости резидентов</a>
+  <a href="" class="news__title">Резидент ОЭЗ «Технополис Москва» откроет два научно-исследовательских центра по разработке медицинских препаратов</a>
+  <p>17 апреля 2023 </p>
+</div>
+          </div>
+          <div class="news__col">
+            <div class="news__it">
+  <a href="" class="news__img-w">
+    <img src="img/news-5.jpg"/>
+  </a>
+  <a href="" class="news__cat">#новости ОЭЗ</a>
+  <a href="" class="news__title">Новые весенние резиденты в промышленном парке «Софийский»</a>
+  <p>17 апреля 2023 </p>
+</div>
+          </div>
         </div>
-      </div>
-    </main>      
-    <footer class="footer">
+      </div>       
+      <ul class="spagin">
+  <li><a class="spagin-control spagin-prev" href="#"></a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>            
+  <li><a class="spagin-control spagin-next" href="#"></a></li>    
+</ul>
+    </div>      
+  </main>
+  <footer class="footer">
   <div class="contain">
     <div class="footer__top">
       <a href="index.html" class="footer__logo"><img src="img/logo.svg" /></a>
@@ -147,11 +224,11 @@
     <div class="footer__copy">© ОЭЗ.РФ, 2023</div>
     <div class="footer__polyt">Пользуясь данным сайтом, вы соглашаетесь с <a href="">пользовательским соглашением</a> и <a href="">политикой конфиденциальности</a></div>
   </div>
-</footer>    
-  </div>
-  <!--wrapper-->
+</footer>
+</div>
+<!--wrapper-->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/nouislider.js"></script>
 <script src="js/wNumb.min.js"></script>
@@ -159,5 +236,5 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
 </body>
-</html>
 
+</html>

@@ -129,7 +129,7 @@ h1, .h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2, .h2 {
@@ -310,7 +310,7 @@ h4, .h4 {
   margin-right: -15px;
   display: flex;
   flex-wrap: wrap;  
-  margin-bottom: 25px;
+  margin-bottom: 25px;  
 }
 
 a {
@@ -455,7 +455,7 @@ a {
       font-weight: 700;
       line-height: 1;      
       position: relative;
-      padding-left: 30px;
+      padding-left: 28px;
       &:not(:last-child) {
         margin-bottom: 13px;
       }
@@ -481,7 +481,8 @@ a {
   padding: 34px 24px;
   display: flex;  
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;  
+  align-items: flex-start;
 }
 
 .banner__logo {
@@ -498,7 +499,7 @@ a {
 
 .banner__r {
   background: url("../img/banner-bg.svg") left center no-repeat rgb(46, 96, 255);
-  padding: 40px 40px 39px 146px;
+  padding: 40px 40px 39px 140px;
   flex: 1 1 auto;
   display: flex;  
   justify-content: center;
@@ -566,6 +567,10 @@ a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        &.active {
+          background-color: #3043B8;
+          color: #fff;
+        }
       }
     }
   }
@@ -694,6 +699,7 @@ select + .select2-container {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 32px;
 }
 
 .economic__col {
@@ -706,8 +712,12 @@ select + .select2-container {
   border-radius: 10px;
   border: 1px solid rgb(231, 231, 231);
   padding: 20px;
+  height: 100%;
   ul {
     li {
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
       a {
         color: rgb(18, 18, 18);
         font-size: 16px;
@@ -717,9 +727,11 @@ select + .select2-container {
     }
   }
   p {
+    margin-top: 12px;
     color: #777;
     font-size: 16px;    
     line-height: 150%;
+    margin-bottom: 0;
     span {
       color: #121212;
     }
@@ -748,6 +760,7 @@ select + .select2-container {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+  margin-bottom: 4px;
 }
 
 .economic__loc {
@@ -755,16 +768,93 @@ select + .select2-container {
   font-size: 16px;
   line-height: 1.5;
   padding-left: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background-image: url("../img/location.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
 
 
+ul.spagin {
+  display: flex;  
+  justify-content: center;  
+  align-items: center;
+  li {
+    margin: 0 3px;
+    a {
+      width: 36px;
+      height: 36px;
+      display: flex;      
+      justify-content: center;
+      align-items: center;  
+      border-radius: 4px;  
+      color: #121212;
+      font-size: 16px;
+      font-weight: 400;
+      &:hover {
+        text-decoration: none;
+        color: #000;
+      }
+      &.active {
+        color: #FFF;
+        background: #3043B8;
+      }
+    }
+  }
+}
+
+.spagin-control {    
+  display: block;
+  background: url("../img/nav-arrow0.svg") $nr center;
+  &:hover {    
+  }
+}
+.spagin-prev {
+  margin-right: auto;
+}
+.spagin-next {
+  margin-left: auto;
+  transform: rotate(180deg);
+}
 
 
+.tags__ul {
+  display: flex;
+  margin-top: 28px;
+  margin-bottom: 13px;
+  flex-wrap: wrap;
+  margin-left: -9px;
+  margin-right: -9px;
+  li {    
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding-right: 9px;
+    padding-left: 9px;
+    a {
+      color: rgb(119, 119, 119);
+      font-size: 18px;
+      display: inline-block;
+      padding-bottom: 2px;
+      &.active {
+        color: rgb(48, 67, 184);      
+        border-bottom: 1px solid rgb(48, 67, 184);      
+      }
+      &:hover {
+       color: rgb(48, 67, 184);      
+       border-bottom: 1px solid rgb(48, 67, 184);       
+     }
+   }
+ }
+}
 
+
+.news__list {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 56px;
+}
 
 //20
 

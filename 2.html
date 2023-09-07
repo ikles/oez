@@ -22,34 +22,19 @@
     @@include('var/_header.html')
     <main class="main">
       <div class="contain">
-        <div class="banner__row">
-          <div class="banner__l">
-            <img src="img/prlogo.svg" class="banner__logo" />
-            <p class="banner__title">
-              Онлайн витрина <br />
-              российских производителей
-            </p>
-          </div>
-          <div class="banner__r">
-            <ul>
-              <li>Заказы на поставку</li>
-              <li>Бесплатная регистрация</li>
-              <li>Удобный каталог поставщиков</li>
-            </ul>
-          </div>
-        </div>
+        @@include('var/_banner.html')
         <ul class="bread">
-          <li><a href="">Главная</a></li>
+          <li><a href=''>Главная</a></li>
           <li>Особые экономические зоны</li>
         </ul>
         <div class="economic">
           <div class="h1">Особые экономические зоны</div>
           <div class="actions__row">
             <ul>
-              <li><a href="">Технико-внедренческие</a></li>
-              <li><a href="">Промышленно-производственные</a></li>
-              <li><a href="">Туристско-рекреационные</a></li>
-              <li><a href="">Портовые</a></li>
+              <li><a href=''>Технико-внедренческие</a></li>
+              <li><a href=''>Промышленно-производственные</a></li>
+              <li><a href=''>Туристско-рекреационные</a></li>
+              <li><a href=''>Портовые</a></li>
             </ul>
             <div class="w247">
               <select>
@@ -79,85 +64,78 @@
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
-
-
-            @@loop('var/_loop.html', [
-            { "text": "Автомобилестроение" },    
-            { "text": "Автомобилестроение2" }  
-            ])
-
-
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Промышленно-производственные ОЭЗ",
                 "img":"img/economic-3.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Санкт-Петербург",
+                "loc":"Санкт-Петербург",
+                "list":"<ul><li><a href=''>Информационные технологии</a></li><li><a href=''>Фармацевтика и медицинские технологии</a></li><li><a href=''>Энергоэффективность</a></li><li><a href=''>Точное приборостроение</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Портовые ОЭЗ",
                 "img":"img/economic-4.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Ульяновск",
+                "loc":"Ульяновская область",
+                "list":"<ul><li><a href=''>Произодство авиационной техники</a></li><li><a href=''>Техническое обслуживание и ремонт авиационной техники</a></li><li><a href=''>Логистика</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Промышленно-производственные зоны ОЭЗ",
                 "img":"img/economic-5.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Титановая долина",
+                "loc":"Свердловская область",
+                "list":"<ul><li><a href=''>Производство изделий из титана</a></li><li><a href=''>Производство компонентов и оборудования для металлургии<li><a href=''>машиностроение</a></li><li><a href=''>Авиастроение</a></li><li><a href=''>Медицинское оборудование и материалы Нефтегазовое оборудование</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Промышленно-производственные ОЭЗ",
                 "img":"img/economic-6.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
-                "res":"Количество резидентов: <span>69</span>"
+                "title":"Моглино",
+                "loc":"Псковская область",
+                "list":"<ul><li><a href=''>Производство изделий из титана</a></li><li><a href=''>Производство компонентов и оборудования для металлургии</a></li><li><a href=''>Машиностроение</a></li><li><a href=''>Авиастроение</a></li><li><a href=''>Медицинское оборудование и материалы</a></li><li><a href=''>Нефтегазовое оборудование</a></li></ul>",
+                "res":"Количество резидентов: <span>22</span>"
               })
             </div>
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Промышленно-производственные ОЭЗ",
                 "img":"img/economic-7.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Ступино квадрат",
+                "loc":"Московская область",
+                "list":"<ul><li><a href=''>Строительные материалы</a></li><li><a href=''>Нефтехимия</a></li><li><a href=''>Техническое обслуживание и ремонт авиационной техники</a></li><li><a href=''>Логистика</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Туристско-рекреационные ОЭЗ",
                 "img":"img/economic-8.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Байкальская гавань",
+                "loc":"Республика Бурятия",
+                "list":"<ul><li><a href=''>Лечебно-оздоровительный</a></li><li><a href=''>Круизный</a></li><li><a href=''>Горнолыжный</a></li><li><a href=''>Религиозный</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
-            </div>
+            </div>            
             <div class="economic__col">
               @@include('var/_economic__it.html',{
-                "cat":"Промышленнопроизводственные",
+                "cat":"Туристско-рекреационные ОЭЗ",
                 "img":"img/economic-0.jpg",
-                "title":"Алабуга",
-                "loc":"Республика",
-                "list":"",
+                "title":"Завидово",
+                "loc":"Тверская область",
+                "list":"<ul><li><a href=''>Деловой</a></li><li><a href=''>Экскурсионный</a></li><li><a href=''>Лечебно-оздоровительный</a></li><li><a href=''>Экологический</a></li><li><a href=''>Водный</a></li></ul>",
                 "res":"Количество резидентов: <span>69</span>"
               })
             </div>
           </div>
+          @@include('var/_spagin.html')          
         </div>
       </div>
     </main>
