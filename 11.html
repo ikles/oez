@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11. О проекте</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        @@include('var/_banner.html')
+        <ul class="bread">
+          <li><a href=''>Главная</a></li>          
+          <li>О проекте</li>
+        </ul>
+        <div class="row">
+          <div class="col-l">
+            <div class="h1">Опроекте</div>
+            <div class="about">
+              <div class="about__item">
+                <p>текст</p>
+              </div>
+              <div class="about__item">
+                <div class="h2">Контакты</div>
+                <p><a href="mailto:info@site.ru">info@site.ru</a></p>
+              </div>
+              <div class="about__item">
+                <div class="h2">Часто задаваемые вопросы</div>
+                <div class="accordion-container">
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Как стать резидентом ОЭЗ?                      
+                    </div>
+                    <div class="accordion-content">
+                      Резидент ОЭЗ не вправе сдавать участок в субаренду (поднаем) и передавать свои права и обязанности по договору аренды другому лицу (перенаем), предоставлять земельный участок в безвозмездное срочное пользование, а также отдавать
+                      арендные права в залог и вносить их в качестве вклада в уставный капитал хозяйственных товариществ и обществ или паевого взноса в производственный кооператив.
+                    </div>                    
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Как получить земельный участок в аренду ?
+                    </div>
+                    <div class="accordion-content">
+                      <p>Резидент ОЭЗ не вправе сдавать участок в субаренду (поднаем) и передавать свои права и обязанности по договору аренды другому лицу (перенаем), предоставлять земельный участок в безвозмездное срочное пользование, а также отдавать арендные права в залог и вносить их в качестве вклада в уставный капитал хозяйственных товариществ и обществ или паевого взноса в производственный кооператив.</p>
+                      <p>Резиденту ОЭЗ может быть отказано в предоставлении земельного участка в аренду в случае несоответствия площади испрашиваемого земельного участка площади земельного участка, указанной в бизнес-плане резидента ОЭЗ или в соглашении о ведении деятельности на территории ОЭЗ.</p>
+                    </div>                    
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Какие виды производства могут размещаться в ОЭЗ?
+                    </div>
+                    <div class="accordion-content">
+                      Резидент ОЭЗ не вправе сдавать участок в субаренду (поднаем) и передавать свои права и обязанности по договору аренды другому лицу (перенаем), предоставлять земельный участок в безвозмездное срочное пользование, а также отдавать
+                      арендные права в залог и вносить их в качестве вклада в уставный капитал хозяйственных товариществ и обществ или паевого взноса в производственный кооператив.
+                    </div>                    
+                  </div>
+                </div>
+
+
+              </div>              
+            </div>
+          </div>
+          <div class="col-r">
+            @@include('var/_bannerr.html')
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>
