@@ -49,17 +49,30 @@ jQuery(document).ready(function( $ ) {
 
 
 
-/*$('.top__slider').slick({
-  infinite: true,    
-  speed: 6000,
-  slidesToScroll: 1,
-  autoplay: false,    
-  slidesToShow: 1,
-  cssEase: 'linear',  
-  autoplaySpeed: 0,  
-  arrows: true,
-  pauseOnHover: true,  
-});*/
+  $('.gal__slider').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 1,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: true,
+    pauseOnHover: true,  
+  });
+
+  let currentSlide = $('.gal__slider').slick('slickCurrentSlide') + 1;
+  const slideCount = $(".gal__slider").slick("getSlick").slideCount;
+
+
+  $(".gal__slider").on("afterChange", function(event, slick, currentSlide, nextSlide){
+    $(".gal__actions span").text(currentSlide + 1);
+  });
+
+
+
+  $('.gal__actions span').html(currentSlide);
+  $('.gal__actions div').html(slideCount);
 
 
 /************************************/
