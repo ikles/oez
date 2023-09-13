@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5. Резиденты</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        @@include('var/_banner.html')
+        <ul class="bread">
+          <li><a href=''>Главная</a></li>
+          <li>Резиденты</li>
+        </ul>
+        <div class="h1">Резиденты</div>
+        <ul class="ftags">
+          <li><a class="active" href="">Все <span>1019</span></a></li>
+          <li><a href="">Строительные материалы и упаковка <span>1019</span></a></li>
+          <li><a href="">Пищевая промышленность <span>8</span></a></li>
+          <li><a href="">Приборостроение и оборудование <span>6</span></a></li>
+          <li><a href="">Микроэлектроника <span>43</span></a></li>
+          <li><a href="">Металлургическая промышленность <span>2</span></a></li>
+          <li><a href="">Фармацевтика и медицина <span>13</span></a></li>
+          <li><a href="">Энергетика и ЖКХ <span>43</span></a></li>
+          <li><a href="">Деревообрабатывающая промышленность <span>10</span></a></li>
+          <li><a href="">Туризм и отдых <span>37</span></a></li>
+        </ul>
+        <div class="row row-reverse">
+          <div class="col-r lfilter">
+            <div class="h4">Фильтр</div>
+            <form>
+              <label>
+                <p>ОЭЗ</p>
+                <select>
+                  <option value="Выбрать">Выбрать</option>
+                  <option value="1">1</option>
+                </select>
+              </label>
+              <label>
+                <p>По отрасли</p>
+                <select>
+                  <option value="Выбрать">Выбрать</option>
+                  <option value="1">1</option>
+                </select>
+              </label>
+              <label>
+                <p>По региону</p>
+                <select>
+                  <option value="Выбрать">Выбрать</option>
+                  <option value="1">1</option>
+                </select>
+              </label>
+              <button type="submit">Применить</button>
+              <button type="reset">Сбросить фильтры</button>
+            </form>
+          </div>
+          <div class="col-l">
+            <div class="filter__comps">
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-1.jpg",
+                "title":"Титан-Полимер",
+                "text":"Производство пластмассовых плит, полос, труб и профилей",
+                "geo":"ОЭЗ ППТ Моглино"
+              })
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-2.jpg",
+                "title":"Робософт",
+                "text":"Разработка компьютерного программного обеспечения",
+                "geo":"ОЭЗ ТВТ Технополис Москва"
+              })
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-3.jpg",
+                "title":"Монэн  Рус",
+                "text":"Производство бэзалкогольных напитков ароматизированных",
+                "geo":"ОЭЗ ТВТ Технополис Москва"
+              })
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-4.jpg",
+                "title":"Балтфарма",
+                "text":"Производство фармацевтических субстанций",
+                "geo":"ОЭЗ ТВТ Санкт-Петербург"
+              })
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-5.jpg",
+                "title":"Евробит",
+                "text":"Производство модифицированного битума",
+                "geo":"ОЭЗ ППТ Иннополис"
+              })
+              @@include('var/_filter__comp.html',{
+                "img":"img/filt-comp-6.jpg",
+                "title":"НИИМЭ",
+                "text":"Научные исследования и опытно-конструкторские работы",
+                "geo":"ОЭЗ ППТ Иннополис"
+              })
+            </div>
+            @@include('var/_spagin.html')
+
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>
